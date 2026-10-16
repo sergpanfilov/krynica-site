@@ -9,7 +9,7 @@ Adres: **https://ai.belhome.cc** (GitHub Pages, gałąź `main`, katalog główn
 - Czysty statyczny HTML + CSS + wanilowy JS. Bez frameworków, bez kroku budowania, bez zależności.
 - **Żadnych zewnętrznych żądań.** Czcionki (Onest, JetBrains Mono) leżą w repozytorium, nie ma Google Fonts, CDN, analityki, pikseli, cookies ani formularzy. Strona pokazuje tę samą zasadę, na której opiera się projekt.
 - Dwa języki: polski (domyślny) i białoruski. Wybór zapamiętywany w `localStorage`; bez zapisu język bierze się z `navigator.language` (`be` i `ru` → białoruski, reszta → polski).
-- Dostępność: kontrast ≥ 4,5:1, zakładki z `role="tab"` / `aria-selected`, pełna obsługa klawiatury (Tab, strzałki, Home/End), `prefers-reduced-motion` wyłącza animacje i autoprzewijanie.
+- Dostępność: kontrast ≥ 4,5:1, zakładki z `role="tab"` / `aria-selected`, pełna obsługa klawiatury (Tab, strzałki, Home/End), `prefers-reduced-motion` wyłącza animacje.
 
 ## Struktura
 
@@ -17,7 +17,7 @@ Adres: **https://ai.belhome.cc** (GitHub Pages, gałąź `main`, katalog główn
 index.html          cała treść strony (tekst polski w HTML; każdy element tekstowy ma data-i18n)
 css/style.css       style, @font-face, responsywność, prefers-reduced-motion
 js/i18n.js          wszystkie teksty w obu językach — jedyne miejsce do edycji treści
-js/main.js          przełącznik języka, wybór społeczności (obracający się schemat), zakładki z autoprzewijaniem
+js/main.js          przełącznik języka, wybór społeczności (obracający się schemat), zakładki
 fonts/onest/        Onest (variable, woff2) + OFL.txt
 fonts/jetbrains-mono/  JetBrains Mono (variable, woff2) + OFL.txt
 favicon.svg         logo

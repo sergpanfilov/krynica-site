@@ -1,12 +1,11 @@
 /* [Krynica] — main.js
-   Language switch, community picker (rotating diagram), tab groups with optional autoplay.
+   Language switch, community picker (rotating diagram), tab groups.
    Vanilla JS, no dependencies, no network requests. */
 (function () {
   'use strict';
 
   var I18N = window.KRYNICA_I18N;
   var STORAGE_KEY = 'krynica-lang';
-  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var lang = 'pl';
 
   /* ---------- i18n ---------- */
@@ -145,21 +144,11 @@
     }
   }
 
-  /* ---------- tabs ---------- */
+  /* ---------- tabs (manual selection only) ---------- */
   function initTabs(root) {
     var tabs = Array.prototype.slice.call(root.querySelectorAll('[role="tab"]'));
     var panels = tabs.map(function (t) { return document.getElementById(t.getAttribute('aria-controls')); });
-    var autoplay = parseInt(root.getAttribute('data-autoplay'), 10) || 0;
-    var timer = null;
     var index = Math.max(0, tabs.findIndex(function (t) { return t.getAttribute('aria-selected') === 'true'; }));
-
-    function restartProgress(tab) {
-      var bar = tab.querySelector('.tab-progress');
-      if (!bar) return;
-      bar.style.animation = 'none';
-      void bar.offsetWidth;
-      bar.style.animation = '';
-    }
 
     function select(n, manual) {
       index = (n + tabs.length) % tabs.length;
@@ -168,17 +157,8 @@
         t.setAttribute('aria-selected', on ? 'true' : 'false');
         t.tabIndex = on ? 0 : -1;
         if (panels[k]) panels[k].hidden = !on;
-        if (on) restartProgress(t);
       });
-      if (manual) {
-        stop();
-        tabs[index].focus();
-      }
-    }
-
-    function stop() {
-      if (timer) { clearInterval(timer); timer = null; }
-      root.setAttribute('data-auto', 'off');
+      if (manual) tabs[index].focus();
     }
 
     tabs.forEach(function (t, k) {
@@ -194,17 +174,6 @@
     });
 
     select(index, false);
-    if (autoplay && !reduceMotion) {
-      root.setAttribute('data-auto', 'on');
-      root.style.setProperty('--dur', autoplay + 'ms');
-      timer = setInterval(function () { select(index + 1, false); }, autoplay);
-      // pause when the page is in a background tab, resume when it comes back
-      document.addEventListener('visibilitychange', function () {
-        if (root.getAttribute('data-auto') !== 'on') return;
-        if (document.hidden) { clearInterval(timer); timer = null; }
-        else if (!timer) timer = setInterval(function () { select(index + 1, false); }, autoplay);
-      });
-    }
   }
 
   /* ---------- boot ---------- */

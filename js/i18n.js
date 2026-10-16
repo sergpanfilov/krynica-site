@@ -23,10 +23,10 @@ window.KRYNICA_I18N = {
     communities: [
       { name: 'Emeryci', q: 'Jak przeliczyć staż pracy z Białorusi?' },
       { name: 'Więźniowie polityczni', q: 'Jak zdobyć dokumenty bez paszportu?' },
-      { name: 'Ochrona praw', q: 'Gdzie szukać pomocy przy dyskryminacji lub przemocy?' },
+      { name: 'Ochrona praw', q: 'Gdzie szukać pomocy przy dyskryminacji?' },
       { name: 'Ochotnicy', q: 'Jaki mam status i jakie prawa w Polsce?' },
       { name: 'Edukacja', q: 'Jak nostryfikować dyplom i studiować w UE?' },
-      { name: 'Samozatrudnieni i małe firmy', q: 'Jak zarejestrować działalność i bronić swoich interesów?' }
+      { name: 'Małe firmy', q: 'Jak założyć firmę i bronić swoich interesów?' }
     ],
     marquee: {
       label: 'Przykładowe pytania',
@@ -175,10 +175,10 @@ window.KRYNICA_I18N = {
     communities: [
       { name: 'Пенсіянеры', q: 'Як пералічыць працоўны стаж з Беларусі?' },
       { name: 'Палітвязні', q: 'Як атрымаць дакументы без пашпарта?' },
-      { name: 'Абарона правоў', q: 'Дзе шукаць дапамогі пры дыскрымінацыі або гвалце?' },
+      { name: 'Абарона правоў', q: 'Дзе шукаць дапамогі пры дыскрымінацыі?' },
       { name: 'Добраахвотнікі', q: 'Які ў мяне статус і якія правы ў Польшчы?' },
       { name: 'Адукацыя', q: 'Як настрыфікаваць дыплом і вучыцца ў ЕС?' },
-      { name: 'Самазанятыя і малы бізнес', q: 'Як зарэгістраваць дзейнасць і абараняць свае інтарэсы?' }
+      { name: 'Малы бізнес', q: 'Як адкрыць фірму і абараняць свае інтарэсы?' }
     ],
     marquee: {
       label: 'Прыклады пытанняў',
