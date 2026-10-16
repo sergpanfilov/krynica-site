@@ -142,6 +142,15 @@
         chips[idx].addEventListener('click', function () { pick(idx); });
       })(i);
     }
+    // the coloured nodes on the diagram are tappable too (the only picker on phones)
+    var nodes = document.querySelectorAll('.node');
+    for (var n = 0; n < nodes.length; n++) {
+      nodes[n].addEventListener('click', function () { pick(parseInt(this.getAttribute('data-node'), 10)); });
+    }
+    var prev = document.querySelector('.q-prev');
+    var next = document.querySelector('.q-next');
+    if (prev) prev.addEventListener('click', function () { pick((current + 5) % 6); });
+    if (next) next.addEventListener('click', function () { pick((current + 1) % 6); });
   }
 
   /* ---------- tabs (manual selection only) ---------- */

@@ -18,7 +18,9 @@ window.KRYNICA_I18N = {
       core: 'wspólny rdzeń',
       diagram: 'Schemat: wspólny rdzeń wiedzy w środku i sześć warstw społeczności wokół niego',
       cardLabel: 'typowe pytanie',
-      picker: 'Wybierz społeczność'
+      picker: 'Wybierz społeczność',
+      prev: 'Poprzednia społeczność',
+      next: 'Następna społeczność'
     },
     communities: [
       { name: 'Emeryci', q: 'Jak przeliczyć staż pracy z Białorusi?' },
@@ -191,7 +193,9 @@ window.KRYNICA_I18N = {
       core: 'агульнае ядро',
       diagram: 'Схема: агульнае ядро ведаў у цэнтры і шэсць слаёў супольнасцей вакол яго',
       cardLabel: 'тыповае пытанне',
-      picker: 'Выберыце супольнасць'
+      picker: 'Выберыце супольнасць',
+      prev: 'Папярэдняя супольнасць',
+      next: 'Наступная супольнасць'
     },
     communities: [
       { name: 'Пенсіянеры', q: 'Як пералічыць працоўны стаж з Беларусі?' },
@@ -223,7 +227,7 @@ window.KRYNICA_I18N = {
       t1: { tag: '01 · Пытаеце', title: 'Тэкстам або голасам, па-свойму', sub: 'Прыватна ў Telegram. Па-беларуску, па-польску або па-руску.' },
       t2: { tag: '02 · Адказ з крыніцай', a1: 'Змена працадаўцы і часовы побыт', a1tag: 'праверана', a2: 'Патрэбныя дакументы', a2tag: 'крыніца', example: 'прыклад', title: 'Ясна, канкрэтна, са спасылкай' },
       t3: { tag: '03 · Вырашаеце справу', form: 'Заява', steps: '3 / 5', title: 'AI-кансультант дапамагае запоўніць заяву' },
-      t4: { tag: '04 · Чалавек сочыць', value: '1 гадз', title: 'На тыдзень юрысту і эксперту дастаткова' },
+      t4: { tag: '04 · Чалавек сочыць', value: '1 гадзіна', title: 'На тыдзень юрысту і эксперту дастаткова' },
       t5: { tag: '05 · База расце', title: 'Кожная кансультацыя вяртаецца ў ядро — ананімна' }
     },
     problems: {
