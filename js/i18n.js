@@ -95,7 +95,7 @@ window.KRYNICA_I18N = {
       lead: 'Model open-source i baza działają na własnym serwerze w Polsce. Ani jedno pytanie nie trafia do zewnętrznych usług.',
       tablist: 'Etapy',
       stages: [
-        { label: 'Start', teaser: 'Jeden serwer, wspólny rdzeń i warstwy społeczności', tag: 'Etap 1 · serwer główny', title: 'Jeden serwer, wszystkie społeczności',
+        { label: 'Start', teaser: 'Wspólny rdzeń, warstwy społeczności', tag: 'Etap 1 · serwer główny', title: 'Jeden serwer, wszystkie społeczności',
           text: 'Wspólny rdzeń wiedzy jest jeden — bez sprzecznych wersji. Każda społeczność ma zaszyfrowaną, oddzielną warstwę ze swoimi przypadkami.',
           c1: 'open-source LLM', c2: 'RAG', c3: 'Telegram', c4: 'lokalne rozpoznawanie mowy' },
         { label: 'Jakość', teaser: 'Jak pilnujemy, by odpowiedzi były trafne', tag: 'Etap 2 · kontrola jakości', title: 'Każda zmiana przechodzi egzamin',
@@ -123,7 +123,7 @@ window.KRYNICA_I18N = {
       title: '[Krynicę] budujemy razem',
       tablist: 'Partnerzy',
       list: [
-        { label: 'Społeczności', teaser: 'Priorytet: warstwa, która należy do Was', tag: 'Nasz pierwszy partner', title: 'Warstwa, która należy do Was', cta: 'Dołącz ze swoją społecznością',
+        { label: 'Społeczności', teaser: 'Warstwa, która należy do Was', tag: 'Nasz pierwszy partner', title: 'Warstwa, która należy do Was', cta: 'Dołącz ze swoją społecznością',
           o1: 'Własna warstwa bazy', d1: 'Z Waszymi przypadkami i Waszym ekspertem.',
           o2: 'Pomoc 24/7', d2: 'Dla każdego członka, w jego języku.',
           o3: 'Z czasem własny serwer', d3: 'Z Waszymi kluczami, na Waszym sprzęcie.',
@@ -138,7 +138,7 @@ window.KRYNICA_I18N = {
           o2: 'Wspólne materiały', d2: 'Z Waszym działem marketingu.',
           o3: 'Wystąpienia', d3: 'Na wydarzeniach branżowych i NGO.',
           o4: 'Model do powtórzenia', d4: 'Dla kolejnych organizacji i społeczności.' },
-        { label: 'Aktywiści', teaser: 'Prawnicy, wolontariusze, specjaliści IT', tag: 'Prawnicy, wolontariusze, IT', title: 'Zmieniaj system godzinę tygodniowo', cta: 'Zostań wolontariuszem',
+        { label: 'Aktywiści', teaser: 'Prawnicy, wolontariusze, IT', tag: 'Prawnicy, wolontariusze, IT', title: 'Zmieniaj system godzinę tygodniowo', cta: 'Zostań wolontariuszem',
           o1: 'Prawnicy i eksperci', d1: 'Sprawdzają odpowiedzi, uzupełniają rdzeń i warstwy.',
           o2: 'Wolontariusze', d2: 'Wyszukują i wybierają gotowe poradniki z poprzednich lat.',
           o3: 'Specjaliści IT', d3: 'Lokalne AI, otwarty kod, architektura.',
@@ -211,7 +211,7 @@ window.KRYNICA_I18N = {
       illustration: 'ілюстрацыя',
       tabs: [
         {
-          label: 'Актуальнасць', teaser: 'Даведнік губляе актуальнасць за некалькі месяцаў',
+          label: 'Актуальнасць', teaser: 'Даведнік старэе за некалькі месяцаў',
           title: 'Даведнік старэе.', accent: '[Krynica] расце.',
           text: 'Грант аплачвае дакумент, а не яго жыццё. Даведнік губляе актуальнасць ужо ў першыя месяцы. [Krynica] штодня вучыцца на пытаннях людзей, а юрыст і эксперт правяраюць яе раз на тыдзень.',
           caption: 'актуальнасць і аб’ём ведаў у месяцах',
@@ -229,7 +229,7 @@ window.KRYNICA_I18N = {
           x0: '1 мес.', x1: '3', x2: '6', x3: '9', x4: '12 мес.'
         },
         {
-          label: 'Уласнасць', teaser: 'Веды з кансультацый знікаюць разам з грантам',
+          label: 'Уласнасць', teaser: 'Веды знікаюць разам з грантам',
           title: 'Веды знікаюць з грантам.', accent: 'У [Krynica] застаюцца.',
           text: 'Досвед кансультацый застаецца ў нататках і справаздачах выканаўцы гранта. У [Krynica] кожны выпадак ананімна трапляе ў базу, якая належыць супольнасці.',
           caption: 'куды трапляюць веды з кансультацый',
@@ -247,7 +247,7 @@ window.KRYNICA_I18N = {
       lead: 'Мадэль з адкрытым кодам і база працуюць на ўласным серверы ў Польшчы. Ніводнае пытанне не трапляе ў знешнія сэрвісы.',
       tablist: 'Этапы',
       stages: [
-        { label: 'Старт', teaser: 'Адзін сервер, агульнае ядро і слаі супольнасцей', tag: 'Этап 1 · галоўны сервер', title: 'Адзін сервер, усе супольнасці',
+        { label: 'Старт', teaser: 'Агульнае ядро і слаі супольнасцей', tag: 'Этап 1 · галоўны сервер', title: 'Адзін сервер, усе супольнасці',
           text: 'Агульнае ядро ведаў адно — без супярэчлівых версій. Кожная супольнасць мае зашыфраваны асобны слой са сваімі выпадкамі.',
           c1: 'open-source LLM', c2: 'RAG', c3: 'Telegram', c4: 'лакальнае распазнаванне маўлення' },
         { label: 'Якасць', teaser: 'Як мы сочым, каб адказы былі дакладнымі', tag: 'Этап 2 · кантроль якасці', title: 'Кожная змена здае экзамен',
@@ -275,7 +275,7 @@ window.KRYNICA_I18N = {
       title: '[Krynica] — будуем разам',
       tablist: 'Партнёры',
       list: [
-        { label: 'Супольнасці', teaser: 'Прыярытэт: слой, які належыць вам', tag: 'Наш першы партнёр', title: 'Слой, які належыць вам', cta: 'Далучыцца са сваёй супольнасцю',
+        { label: 'Супольнасці', teaser: 'Слой, які належыць вам', tag: 'Наш першы партнёр', title: 'Слой, які належыць вам', cta: 'Далучыцца са сваёй супольнасцю',
           o1: 'Уласны слой базы', d1: 'З вашымі выпадкамі і вашым экспертам.',
           o2: 'Дапамога 24/7', d2: 'Кожнаму ўдзельніку, на яго мове.',
           o3: 'З часам уласны сервер', d3: 'З вашымі ключамі, на вашым абсталяванні.',
@@ -285,12 +285,12 @@ window.KRYNICA_I18N = {
           o2: 'Вымерны эфект', d2: 'Лічбы замест дэкларацый.',
           o3: 'Мінімальныя выдаткі', d3: 'Уласны сервер, без воблачных падпісак.',
           o4: 'Адкрытая ліцэнзія', d4: 'Веды застаюцца для ўсіх.' },
-        { label: 'Тэхналагічныя кампаніі', teaser: 'Edge AI на вашым абсталяванні', tag: 'Тэхналагічныя партнёры', title: 'Edge AI на службе людзям — на вашым абсталяванні', cta: 'Пагаворым пра супрацоўніцтва',
+        { label: 'Тэхналагічныя фірмы', teaser: 'Edge AI на вашым абсталяванні', tag: 'Тэхналагічныя партнёры', title: 'Edge AI на службе людзям — на вашым абсталяванні', cta: 'Пагаворым пра супрацоўніцтва',
           o1: 'Case study', d1: 'Ход і вынікі пілота на вашым абсталяванні.',
           o2: 'Супольныя матэрыялы', d2: 'З вашым аддзелам маркетынгу.',
           o3: 'Выступы', d3: 'На галіновых падзеях і ў NGO.',
           o4: 'Мадэль для паўтарэння', d4: 'Для наступных арганізацый і супольнасцей.' },
-        { label: 'Актывісты', teaser: 'Юрысты, валанцёры, IT-спецыялісты', tag: 'Юрысты, валанцёры, IT', title: 'Змяняйце сістэму гадзіну на тыдзень', cta: 'Стаць валанцёрам',
+        { label: 'Актывісты', teaser: 'Юрысты, валанцёры, IT', tag: 'Юрысты, валанцёры, IT', title: 'Змяняйце сістэму гадзіну на тыдзень', cta: 'Стаць валанцёрам',
           o1: 'Юрысты і эксперты', d1: 'Правяраюць адказы, дапаўняюць ядро і слаі.',
           o2: 'Валанцёры', d2: 'Шукаюць і адбіраюць гатовыя даведнікі мінулых гадоў.',
           o3: 'IT-спецыялісты', d3: 'Лакальны AI, адкрыты код, архітэктура.',
