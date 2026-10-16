@@ -385,12 +385,10 @@ h2 { font-size: clamp(2.125rem, 4.6vw, 3.5rem); font-weight: 800; line-height: 1
 .footer-grid > div { display: flex; flex-direction: column; gap: 0.25rem; }
 .footer-grid strong { font-weight: 700; }
 .footer-grid a { color: var(--teal-light); }
-.footer-grid .icons { display: flex; gap: 0.5rem; margin-top: 0.5rem; }
-.icon {
-  display: inline-flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem;
-  border-radius: 50%; border: 1px solid var(--dark-line); color: var(--teal-light); transition: border-color 0.2s, color 0.2s;
-}
-.icon:hover { border-color: var(--teal-light); color: var(--bg); }
+.contact-line { display: flex; align-items: center; flex-wrap: wrap; gap: 0.25rem 0.875rem; }
+.icons { display: inline-flex; align-items: center; gap: 0.625rem; }
+.icon { display: inline-flex; width: 1.5rem; height: 1.5rem; align-items: center; justify-content: center; color: var(--teal-light); transition: color 0.2s; }
+.icon:hover { color: var(--bg); }
 .footer-note { font-family: var(--monofont); font-size: 0.8125rem; color: var(--dark-muted); }
 
 /* ---------- stable width/height across languages ----------
