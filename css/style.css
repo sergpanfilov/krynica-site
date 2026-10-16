@@ -207,7 +207,7 @@ h2 { font-size: clamp(2.125rem, 4.6vw, 3.5rem); font-weight: 800; line-height: 1
   font-size: 1.375rem; line-height: 1; font-weight: 400; color: var(--ink); display: inline-flex; align-items: center; justify-content: center; padding: 0 0 0.125rem;
 }
 .node { cursor: pointer; }
-.q-card-label { font-size: 0.8125rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--pick); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.q-card-label { font-size: 0.8125rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--pick); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; flex: 1 1 0; }
 .q-card-text { font-size: clamp(0.9375rem, 1.3vw, 1.125rem); font-weight: 600; }
 
 .picker { padding: 0.5rem 0 1rem; }
@@ -490,7 +490,8 @@ h2 { font-size: clamp(2.125rem, 4.6vw, 3.5rem); font-weight: 800; line-height: 1
   /* phones: the diagram itself is the picker (tap a node) plus arrows on the card; no chip row */
   .picker { display: none; }
   .orbit-svg { width: min(100%, 19rem); }
-  .q-card { margin-top: -0.5rem; padding: 0.875rem 1.125rem; }
+  .q-card { margin-top: -0.5rem; padding: 0.875rem 1.125rem; max-width: 100%; overflow: hidden; }
+  .q-card-suffix { display: none; } /* only the community name fits beside the arrows */
   .q-nav { display: flex; }
   .q-card-text { font-size: 1rem; min-height: calc(2 * 1.55 * 1rem); } /* two lines in both languages */
   .hero-copy { gap: 1rem; }
