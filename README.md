@@ -24,6 +24,8 @@ fonts/jetbrains-mono/  JetBrains Mono (variable, woff2) + OFL.txt
 favicon.svg         logo
 CNAME               domena dla GitHub Pages
 .nojekyll           wyłącza przetwarzanie Jekyll na GitHub Pages
+404.html            strona błędu 404 (GitHub Pages podaje ją automatycznie)
+robots.txt, sitemap.xml, og-image.png, apple-touch-icon.png — pliki dla wyszukiwarek, podglądów w komunikatorach i ikon
 ```
 
 ## Jak zmienić teksty

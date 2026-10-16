@@ -92,6 +92,8 @@
 
   /* ---------- hero: community picker ---------- */
   var COLORS = ['#C2602B', '#1F6F66', '#8C3B4A', '#4B4E8F', '#B8892B', '#2F5D8A'];
+  // darker shades of the same hues for the card label text (contrast ≥ 4.5:1 on white)
+  var INKS = ['#A24F22', '#1F6F66', '#8C3B4A', '#4B4E8F', '#7E5D16', '#2F5D8A'];
   var current = 0;
   var rotation = 0;
   var orbit = document.querySelector('.orbit');
@@ -124,6 +126,7 @@
     rotation += delta;
     if (rot) rot.style.transform = 'rotate(' + rotation + 'deg)';
     if (orbit) orbit.style.setProperty('--pick', COLORS[index]);
+    if (orbit) orbit.style.setProperty('--pick-ink', INKS[index]);
     var chips = document.querySelectorAll('.chip');
     for (var i = 0; i < chips.length; i++) chips[i].setAttribute('aria-pressed', i === index ? 'true' : 'false');
     // replay the card animation

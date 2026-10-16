@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ai.belhome.cc/sitemap.xml
