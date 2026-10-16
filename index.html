@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[Krynica] — suwerenny AI społeczności</title>
+<meta name="description" content="Pilotaż 2026. Wspólny rdzeń wiedzy i warstwy społeczności. AI-konsultant bez chmury, który rośnie z każdego pytania.">
+<meta name="theme-color" content="#F3F1ED">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="meta.skip">Przejdź do treści</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="#top" data-i18n-attr="aria-label:nav.logo" aria-label="Krynica — strona główna">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="20" cy="20" r="18" stroke="#1F6F66" stroke-width="2" stroke-opacity="0.25"/>
+        <circle cx="20" cy="20" r="12" stroke="#1F6F66" stroke-width="2" stroke-opacity="0.55"/>
+        <circle cx="20" cy="20" r="6" fill="#C2602B"/>
+      </svg>
+      <span class="logo-text"><span class="br">[</span>Krynica<span class="br">]</span></span>
+    </a>
+    <nav class="nav" data-i18n-attr="aria-label:nav.label" aria-label="Główna">
+      <a href="#jak" data-i18n="nav.how">Jak działa</a>
+      <a href="#problemy" data-i18n="nav.problems">Problemy</a>
+      <a href="#technologia" data-i18n="nav.tech">Technologia</a>
+      <a href="#partnerzy" data-i18n="nav.partners">Partnerzy</a>
+    </nav>
+    <div class="header-tools">
+      <div class="lang-switch" role="group" data-i18n-attr="aria-label:nav.lang" aria-label="Język strony">
+        <button type="button" class="lang" data-lang="pl" aria-pressed="true" lang="pl">PL</button>
+        <button type="button" class="lang" data-lang="be" aria-pressed="false" lang="be">BY</button>
+      </div>
+      <a class="btn btn-ink btn-small" href="#kontakt" data-i18n="nav.join">Dołącz</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="kicker" data-i18n="hero.kicker">pilotaż 2026</p>
+      <h1 data-i18n="hero.title">Wiedza, która <em class="accent">płynie</em> do ludzi</h1>
+      <p class="lead" data-i18n="hero.lead">Suwerenny AI społeczności: wspólny rdzeń wiedzy i warstwy poszczególnych społeczności. Rośnie z każdego pytania. Należy do ludzi, którzy go tworzą.</p>
+      <div class="hero-actions">
+        <a class="btn btn-accent" href="#jak" data-i18n="hero.cta1">Jak to działa</a>
+        <a class="btn btn-outline" href="#partnerzy" data-i18n="hero.cta2">Zostań partnerem</a>
+      </div>
+    </div>
+
+    <div class="orbit">
+      <svg class="orbit-svg" viewBox="0 0 600 600" fill="none" role="img" data-i18n-attr="aria-label:hero.diagram" aria-label="Schemat: wspólny rdzeń wiedzy w środku i sześć warstw społeczności wokół niego">
+        <defs>
+          <radialGradient id="core-glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#1F6F66" stop-opacity="0.35"/>
+            <stop offset="100%" stop-color="#1F6F66" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <circle cx="300" cy="300" r="280" fill="url(#core-glow)"/>
+        <circle cx="300" cy="300" r="240" stroke="#1F6F66" stroke-width="1.5" stroke-opacity="0.18" stroke-dasharray="4 8"/>
+        <circle cx="300" cy="300" r="100" stroke="#1F6F66" stroke-width="2" stroke-opacity="0.5"/>
+        <g class="orbit-rot">
+          <circle cx="300" cy="300" r="170" stroke="#1F6F66" stroke-width="1.5" stroke-opacity="0.3"/>
+          <path d="M300 300 L300 60" stroke="#C2602B" stroke-width="2.5" stroke-opacity="0.5"/>
+          <path d="M300 300 L508 180" stroke="#1F6F66" stroke-width="2.5" stroke-opacity="0.5"/>
+          <path d="M300 300 L508 420" stroke="#8C3B4A" stroke-width="2.5" stroke-opacity="0.5"/>
+          <path d="M300 300 L300 540" stroke="#4B4E8F" stroke-width="2.5" stroke-opacity="0.5"/>
+          <path d="M300 300 L92 420" stroke="#B8892B" stroke-width="2.5" stroke-opacity="0.5"/>
+          <path d="M300 300 L92 180" stroke="#2F5D8A" stroke-width="2.5" stroke-opacity="0.5"/>
+          <circle cx="385" cy="153" r="5" fill="#1F6F66"/>
+          <circle cx="470" cy="300" r="5" fill="#8C3B4A"/>
+          <circle cx="385" cy="447" r="5" fill="#4B4E8F"/>
+          <circle cx="215" cy="447" r="5" fill="#B8892B"/>
+          <circle cx="130" cy="300" r="5" fill="#2F5D8A"/>
+          <circle cx="215" cy="153" r="5" fill="#C2602B"/>
+          <circle cx="300" cy="60" r="30" fill="#C2602B"/>
+          <circle cx="508" cy="180" r="30" fill="#1F6F66"/>
+          <circle cx="508" cy="420" r="30" fill="#8C3B4A"/>
+          <circle cx="300" cy="540" r="30" fill="#4B4E8F"/>
+          <circle cx="92" cy="420" r="30" fill="#B8892B"/>
+          <circle cx="92" cy="180" r="30" fill="#2F5D8A"/>
+        </g>
+        <circle class="orbit-pointer" cx="300" cy="60" r="43" stroke-width="3"/>
+        <circle class="orbit-pulse" cx="300" cy="60" r="43" stroke-width="2"/>
+        <circle cx="300" cy="300" r="54" fill="#16191C"/>
+        <circle cx="300" cy="300" r="20" fill="#C2602B"/>
+        <rect x="225" y="366" width="150" height="24" rx="12" fill="#F3F1ED" fill-opacity="0.92"/>
+        <text class="orbit-label" x="300" y="382" text-anchor="middle" data-i18n="hero.core">wspólny rdzeń</text>
+      </svg>
+      <div class="q-card" aria-live="polite">
+        <p class="q-card-label"><span class="q-card-name">Emeryci</span> · <span data-i18n="hero.cardLabel">typowe pytanie</span></p>
+        <p class="q-card-text">Jak przeliczyć staż pracy z Białorusi?</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="picker" data-i18n-attr="aria-label:hero.picker" aria-label="Wybierz społeczność">
+  <div class="wrap">
+    <button type="button" class="chip" aria-pressed="true" style="--dot:#C2602B" data-i18n="communities.0.name">Emeryci</button>
+    <button type="button" class="chip" aria-pressed="false" style="--dot:#1F6F66" data-i18n="communities.1.name">Więźniowie polityczni</button>
+    <button type="button" class="chip" aria-pressed="false" style="--dot:#8C3B4A" data-i18n="communities.2.name">Ochrona praw</button>
+    <button type="button" class="chip" aria-pressed="false" style="--dot:#4B4E8F" data-i18n="communities.3.name">Ochotnicy</button>
+    <button type="button" class="chip" aria-pressed="false" style="--dot:#B8892B" data-i18n="communities.4.name">Edukacja</button>
+    <button type="button" class="chip" aria-pressed="false" style="--dot:#2F5D8A" data-i18n="communities.5.name">Samozatrudnieni i małe firmy</button>
+  </div>
+</section>
+
+<!-- ===== Marquee ===== -->
+<section class="marquee" data-i18n-attr="aria-label:marquee.label" aria-label="Przykładowe pytania">
+  <div class="marquee-track">
+    <ul class="marquee-list">
+      <li data-i18n="marquee.items.0">Jak przedłużyć kartę pobytu?</li>
+      <li data-i18n="marquee.items.1">Jak otworzyć konto w banku bez paszportu?</li>
+      <li data-i18n="marquee.items.2">Czy mogę studiować zaocznie?</li>
+      <li data-i18n="marquee.items.3">Jak zgłosić dyskryminację w pracy?</li>
+      <li data-i18n="marquee.items.4">Jak przeliczyć emeryturę ze stażem z Białorusi?</li>
+      <li data-i18n="marquee.items.5">Od czego zacząć JDG?</li>
+      <li data-i18n="marquee.items.6">Jak nostryfikować dyplom?</li>
+      <li data-i18n="marquee.items.7">Co daje ochrona międzynarodowa?</li>
+      <li data-i18n="marquee.items.8">Jak zapisać się do NFZ?</li>
+      <li data-i18n="marquee.items.9">Jak rozliczyć PIT za pierwszy rok?</li>
+    </ul>
+    <ul class="marquee-list" aria-hidden="true">
+      <li data-i18n="marquee.items.0">Jak przedłużyć kartę pobytu?</li>
+      <li data-i18n="marquee.items.1">Jak otworzyć konto w banku bez paszportu?</li>
+      <li data-i18n="marquee.items.2">Czy mogę studiować zaocznie?</li>
+      <li data-i18n="marquee.items.3">Jak zgłosić dyskryminację w pracy?</li>
+      <li data-i18n="marquee.items.4">Jak przeliczyć emeryturę ze stażem z Białorusi?</li>
+      <li data-i18n="marquee.items.5">Od czego zacząć JDG?</li>
+      <li data-i18n="marquee.items.6">Jak nostryfikować dyplom?</li>
+      <li data-i18n="marquee.items.7">Co daje ochrona międzynarodowa?</li>
+      <li data-i18n="marquee.items.8">Jak zapisać się do NFZ?</li>
+      <li data-i18n="marquee.items.9">Jak rozliczyć PIT za pierwszy rok?</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== Jak działa ===== -->
+<section class="section" id="jak">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="title">
+        <p class="kicker" data-i18n="how.kicker">jak to działa</p>
+        <h2 data-i18n="how.title">Od pytania do załatwionej sprawy</h2>
+      </div>
+      <p class="lead" data-i18n="how.lead"><span class="br">[</span>Krynica<span class="br">]</span> nie tylko odpowiada. Pomaga wypełnić wniosek, a każda konsultacja wraca do rdzenia i uczy całą społeczność.</p>
+    </div>
+    <div class="bento">
+      <div class="tile tile-3 tile-dark">
+        <p class="tile-tag" data-i18n="how.t1.tag">01 · Pytasz</p>
+        <div class="wave" aria-hidden="true">
+          <span style="height:20px"></span><span style="height:44px"></span><span style="height:64px"></span><span style="height:36px"></span><span style="height:72px"></span><span style="height:50px"></span><span style="height:28px"></span><span style="height:58px"></span><span style="height:40px"></span><span style="height:66px"></span><span style="height:24px"></span><span style="height:46px"></span><span style="height:18px"></span><span style="height:54px"></span><span style="height:30px"></span>
+        </div>
+        <div>
+          <p class="tile-title" data-i18n="how.t1.title">Tekstem lub głosem, po swojemu</p>
+          <p class="tile-sub" data-i18n="how.t1.sub">Prywatnie w Telegramie. Po białorusku, polsku lub rosyjsku.</p>
+        </div>
+      </div>
+
+      <div class="tile tile-3 tint1">
+        <p class="tile-tag" data-i18n="how.t2.tag">02 · Odpowiedź ze źródłem</p>
+        <div class="answers">
+          <div class="answer"><span data-i18n="how.t2.a1">Zmiana pracodawcy a pobyt czasowy</span><span class="answer-tag" data-i18n="how.t2.a1tag">sprawdzone</span></div>
+          <div class="answer dim"><span data-i18n="how.t2.a2">Wymagane dokumenty</span><span class="answer-tag" data-i18n="how.t2.a2tag">źródło</span></div>
+          <p class="example" data-i18n="how.t2.example">przykład</p>
+        </div>
+        <p class="tile-title" data-i18n="how.t2.title">Jasno, konkretnie, z odnośnikiem</p>
+      </div>
+
+      <div class="tile tile-2 tint2">
+        <p class="tile-tag" data-i18n="how.t3.tag">03 · Załatwiasz sprawę</p>
+        <div class="progress-card">
+          <div class="progress-head"><span data-i18n="how.t3.form">Wniosek</span><span data-i18n="how.t3.steps">3 / 5</span></div>
+          <div class="progress-bar" aria-hidden="true"><span></span></div>
+        </div>
+        <p class="tile-title" data-i18n="how.t3.title">AI-konsultant pomaga wypełnić wniosek</p>
+      </div>
+
+      <div class="tile tile-2 tint3">
+        <p class="tile-tag" data-i18n="how.t4.tag">04 · Człowiek czuwa</p>
+        <p class="big-number" data-i18n="how.t4.value">1 h</p>
+        <p class="tile-title" data-i18n="how.t4.title">Tygodniowo prawnika i eksperta wystarczy</p>
+      </div>
+
+      <div class="tile tile-2 tint4">
+        <p class="tile-tag" data-i18n="how.t5.tag">05 · Baza rośnie</p>
+        <div class="bars" aria-hidden="true">
+          <span style="height:22%"></span><span style="height:34%"></span><span style="height:45%"></span><span style="height:61%"></span><span style="height:78%"></span><span style="height:100%"></span>
+        </div>
+        <p class="tile-title" data-i18n="how.t5.title">Każda konsultacja wraca do rdzenia — anonimowo</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Problemy ===== -->
+<section class="section section-tight" id="problemy">
+  <div class="wrap">
+    <div class="title">
+      <p class="kicker" data-i18n="problems.kicker">trzy problemy starego modelu · wybierz, aby porównać</p>
+    </div>
+    <div class="tabs" role="tablist" data-tabs data-autoplay="8000" data-i18n-attr="aria-label:problems.tablist" aria-label="Problemy">
+      <button type="button" class="tab" role="tab" id="pt-0" aria-controls="pp-0" aria-selected="true">
+        <span class="tab-head"><span class="mono">01 / 03</span><span class="tab-arrow" aria-hidden="true"></span></span>
+        <span class="tab-label" data-i18n="problems.tabs.0.label">Aktualność</span>
+        <span class="tab-teaser" data-i18n="problems.tabs.0.teaser">Poradnik traci aktualność w kilka miesięcy</span>
+        <span class="tab-progress" aria-hidden="true"></span>
+      </button>
+      <button type="button" class="tab" role="tab" id="pt-1" aria-controls="pp-1" aria-selected="false" tabindex="-1">
+        <span class="tab-head"><span class="mono">02 / 03</span><span class="tab-arrow" aria-hidden="true"></span></span>
+        <span class="tab-label" data-i18n="problems.tabs.1.label">Przepustowość</span>
+        <span class="tab-teaser" data-i18n="problems.tabs.1.teaser">Dwóch-trzech konsultantów to za mało</span>
+        <span class="tab-progress" aria-hidden="true"></span>
+      </button>
+      <button type="button" class="tab" role="tab" id="pt-2" aria-controls="pp-2" aria-selected="false" tabindex="-1">
+        <span class="tab-head"><span class="mono">03 / 03</span><span class="tab-arrow" aria-hidden="true"></span></span>
+        <span class="tab-label" data-i18n="problems.tabs.2.label">Własność</span>
+        <span class="tab-teaser" data-i18n="problems.tabs.2.teaser">Wiedza z konsultacji ginie z grantem</span>
+        <span class="tab-progress" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <!-- 01 Aktualność -->
+    <div class="panel problem" role="tabpanel" id="pp-0" aria-labelledby="pt-0">
+      <div class="problem-copy">
+        <h2><span data-i18n="problems.tabs.0.title">Poradnik starzeje się.</span> <span class="accent" data-i18n="problems.tabs.0.accent"><span class="br">[</span>Krynica<span class="br">]</span> rośnie.</span></h2>
+        <p class="lead" data-i18n="problems.tabs.0.text">Grant opłaca dokument, nie jego życie. Poradnik traci aktualność już w pierwszych miesiącach. <span class="br">[</span>Krynicę<span class="br">]</span> codziennie uczą pytania ludzi, a prawnik i ekspert sprawdzają ją raz w tygodniu.</p>
+        <div class="legend">
+          <span><i style="--sw:#B9B2A6"></i><b data-i18n="problems.tabs.0.l1">tradycyjny poradnik</b></span>
+          <span><i style="--sw:#1F6F66"></i><b data-i18n="problems.tabs.0.l2"><span class="br">[</span>Krynica<span class="br">]</span></b></span>
+        </div>
+      </div>
+      <div class="chart">
+        <p class="chart-caption"><span data-i18n="problems.tabs.0.caption">aktualność i zakres wiedzy w miesiącach</span> · <span data-i18n="problems.illustration">ilustracja</span></p>
+        <svg role="img" viewBox="0 0 600 300" fill="none" data-i18n-attr="aria-label:problems.tabs.0.alt" aria-label="Wykres: aktualność poradnika spada w ciągu kilku miesięcy po publikacji, a wiedza w Krynicy rośnie">
+          <g stroke="#E2DED6" stroke-width="1"><path d="M40 40 H580"/><path d="M40 110 H580"/><path d="M40 180 H580"/><path d="M40 250 H580"/></g>
+          <path d="M40 70 L130 70 L130 100 L220 100 L220 140 L310 140 L310 178 L400 178 L400 206 L490 206 L490 230 L580 230" stroke="#B9B2A6" stroke-width="4" stroke-linejoin="round"/>
+          <path d="M40 250 C 120 230, 180 200, 260 170 S 420 100, 580 50 L580 250 Z" fill="#1F6F66" fill-opacity="0.08"/>
+          <path d="M40 250 C 120 230, 180 200, 260 170 S 420 100, 580 50" stroke="#1F6F66" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="130" cy="70" r="7" fill="#B9B2A6"/>
+          <circle cx="580" cy="50" r="18" fill="#1F6F66" fill-opacity="0.2"/><circle cx="580" cy="50" r="9" fill="#1F6F66"/>
+        </svg>
+        <div class="axis" aria-hidden="true"><span data-i18n="problems.tabs.0.x0">publikacja</span><span data-i18n="problems.tabs.0.x1">3 mies.</span><span data-i18n="problems.tabs.0.x2">6 mies.</span><span data-i18n="problems.tabs.0.x3">9 mies.</span><span data-i18n="problems.tabs.0.x4">12 mies.</span></div>
+      </div>
+    </div>
+
+    <!-- 02 Przepustowość -->
+    <div class="panel problem" role="tabpanel" id="pp-1" aria-labelledby="pt-1" hidden>
+      <div class="problem-copy">
+        <h2><span data-i18n="problems.tabs.1.title">Konsultanci to wąskie gardło.</span> <span class="accent" data-i18n="problems.tabs.1.accent"><span class="br">[</span>Krynica<span class="br">]</span> nie.</span></h2>
+        <p class="lead" data-i18n="problems.tabs.1.text">Pytań przybywa co miesiąc, a dwóch-trzech konsultantów obsłuży tylko stałą część. Reszta zostaje bez odpowiedzi. W <span class="br">[</span>Krynicy<span class="br">]</span> AI-konsultant odpowiada wszystkim, a ludzie zajmują się tylko trudnymi sprawami.</p>
+        <div class="legend">
+          <span><i style="--sw:#B9B2A6"></i><b data-i18n="problems.tabs.1.l1">obsłużone przez konsultantów</b></span>
+          <span><i style="--sw:#F2D3C3"></i><b data-i18n="problems.tabs.1.l2">bez odpowiedzi</b></span>
+          <span><i style="--sw:#1F6F66"></i><b data-i18n="problems.tabs.1.l3"><span class="br">[</span>Krynica<span class="br">]</span></b></span>
+        </div>
+      </div>
+      <div class="chart">
+        <p class="chart-caption"><span data-i18n="problems.tabs.1.caption">pytania miesięcznie</span> · <span data-i18n="problems.illustration">ilustracja</span></p>
+        <svg role="img" viewBox="0 0 600 300" fill="none" data-i18n-attr="aria-label:problems.tabs.1.alt" aria-label="Wykres: liczba pytań rośnie z miesiąca na miesiąc, konsultanci obsługują tylko stałą część, reszta zostaje bez odpowiedzi; Krynica odpowiada na wszystkie">
+          <g stroke="#E2DED6" stroke-width="1"><path d="M40 70 H590"/><path d="M40 160 H590"/><path d="M40 250 H590"/></g>
+          <g fill="#B9B2A6">
+            <rect x="52" y="220" width="30" height="30" rx="4"/><rect x="96" y="210" width="30" height="40" rx="4"/><rect x="140" y="210" width="30" height="40" rx="4"/><rect x="184" y="210" width="30" height="40" rx="4"/><rect x="228" y="210" width="30" height="40" rx="4"/><rect x="272" y="210" width="30" height="40" rx="4"/><rect x="316" y="210" width="30" height="40" rx="4"/><rect x="360" y="210" width="30" height="40" rx="4"/><rect x="404" y="210" width="30" height="40" rx="4"/><rect x="448" y="210" width="30" height="40" rx="4"/><rect x="492" y="210" width="30" height="40" rx="4"/><rect x="536" y="210" width="30" height="40" rx="4"/>
+          </g>
+          <g fill="#F2D3C3">
+            <rect x="96" y="206" width="30" height="4" rx="2"/><rect x="140" y="195" width="30" height="15" rx="4"/><rect x="184" y="187" width="30" height="23" rx="4"/><rect x="228" y="172" width="30" height="38" rx="4"/><rect x="272" y="160" width="30" height="50" rx="4"/><rect x="316" y="146" width="30" height="64" rx="4"/><rect x="360" y="132" width="30" height="78" rx="4"/><rect x="404" y="120" width="30" height="90" rx="4"/><rect x="448" y="104" width="30" height="106" rx="4"/><rect x="492" y="90" width="30" height="120" rx="4"/><rect x="536" y="74" width="30" height="136" rx="4"/>
+          </g>
+          <path d="M40 210 H590" stroke="#A24F22" stroke-width="2.5" stroke-dasharray="7 6"/>
+          <polyline points="67,212 111,200 155,187 199,179 243,164 287,152 331,138 375,124 419,112 463,96 507,82 551,66" stroke="#1F6F66" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="axis" aria-hidden="true"><span data-i18n="problems.tabs.1.x0">1 mies.</span><span data-i18n="problems.tabs.1.x1">3</span><span data-i18n="problems.tabs.1.x2">6</span><span data-i18n="problems.tabs.1.x3">9</span><span data-i18n="problems.tabs.1.x4">12 mies.</span></div>
+      </div>
+    </div>
+
+    <!-- 03 Własność -->
+    <div class="panel problem" role="tabpanel" id="pp-2" aria-labelledby="pt-2" hidden>
+      <div class="problem-copy">
+        <h2><span data-i18n="problems.tabs.2.title">Wiedza ginie z grantem.</span> <span class="accent" data-i18n="problems.tabs.2.accent">W <span class="br">[</span>Krynicy<span class="br">]</span> zostaje.</span></h2>
+        <p class="lead" data-i18n="problems.tabs.2.text">Doświadczenie z konsultacji zostaje w notatkach i raportach wykonawcy grantu. W <span class="br">[</span>Krynicy<span class="br">]</span> każdy przypadek, anonimowo, trafia do bazy, która należy do społeczności.</p>
+        <div class="legend">
+          <span><i style="--sw:#B9B2A6"></i><b data-i18n="problems.tabs.2.l1">u wykonawcy grantu</b></span>
+          <span><i style="--sw:#1F6F66"></i><b data-i18n="problems.tabs.2.l2">w bazie społeczności</b></span>
+        </div>
+      </div>
+      <div class="chart">
+        <p class="chart-caption"><span data-i18n="problems.tabs.2.caption">dokąd trafia wiedza z konsultacji</span> · <span data-i18n="problems.illustration">ilustracja</span></p>
+        <div class="flow">
+          <div class="flow-row">
+            <p data-i18n="problems.tabs.2.g">Model grantowy</p>
+            <div class="flow-bar">
+              <span style="flex:2;background:#B9B2A6;color:#16191C"><b data-i18n="problems.tabs.2.g1">notatki konsultanta</b></span>
+              <span style="flex:1.2;background:#B9B2A6;color:#16191C"><b data-i18n="problems.tabs.2.g2">raport</b></span>
+              <span style="flex:2.4;background:#E9E5DE;color:#4E5358"><b data-i18n="problems.tabs.2.g3">ginie po grancie</b></span>
+            </div>
+            <p class="flow-note" data-i18n="problems.tabs.2.gnote">Wiedza zostaje u wykonawcy grantu i znika razem z projektem.</p>
+          </div>
+          <div class="flow-row">
+            <p data-i18n="problems.tabs.2.k"><span class="br">[</span>Krynica<span class="br">]</span></p>
+            <div class="flow-bar">
+              <span style="flex:4;background:#1F6F66;color:#FFFFFF"><b data-i18n="problems.tabs.2.k1">baza społeczności · anonimowo</b></span>
+              <span style="flex:1.6;background:#8CC7BE;color:#16191C"><b data-i18n="problems.tabs.2.k2">odpowiedź dla pytającego</b></span>
+            </div>
+            <p class="flow-note" data-i18n="problems.tabs.2.knote">Każda konsultacja zostaje w bazie, którą społeczność może zabrać na własny serwer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Technologia ===== -->
+<section class="section" id="technologia">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="title">
+        <p class="kicker" data-i18n="tech.kicker">technologia · trzy etapy · wybierz, aby zobaczyć</p>
+        <h2 data-i18n="tech.title">Suwerenny AI społeczności. <em class="accent">Bez chmury.</em></h2>
+      </div>
+      <p class="lead" data-i18n="tech.lead">Model open-source i baza działają na własnym serwerze w Polsce. Ani jedno pytanie nie trafia do zewnętrznych usług.</p>
+    </div>
+    <div class="tabs" role="tablist" data-tabs data-autoplay="8000" data-i18n-attr="aria-label:tech.tablist" aria-label="Etapy">
+      <button type="button" class="tab" role="tab" id="tt-0" aria-controls="tp-0" aria-selected="true">
+        <span class="tab-head"><span class="mono">01 / 03</span><span class="tab-arrow" aria-hidden="true"></span></span>
+        <span class="tab-label" data-i18n="tech.stages.0.label">Start</span>
+        <span class="tab-teaser" data-i18n="tech.stages.0.teaser">Jeden serwer, wspólny rdzeń i warstwy społeczności</span>
+        <span class="tab-progress" aria-hidden="true"></span>
+      </button>
+      <button type="button" class="tab" role="tab" id="tt-1" aria-controls="tp-1" aria-selected="false" tabindex="-1">
+        <span class="tab-head"><span class="mono">02 / 03</span><span class="tab-arrow" aria-hidden="true"></span></span>
+        <span class="tab-label" data-i18n="tech.stages.1.label">Jakość</span>
+        <span class="tab-teaser" data-i18n="tech.stages.1.teaser">Jak pilnujemy, by odpowiedzi były trafne</span>
+        <span class="tab-progress" aria-hidden="true"></span>
+      </button>
+      <button type="button" class="tab" role="tab" id="tt-2" aria-controls="tp-2" aria-selected="false" tabindex="-1">
+        <span class="tab-head"><span class="mono">03 / 03</span><span class="tab-arrow" aria-hidden="true"></span></span>
+        <span class="tab-label" data-i18n="tech.stages.2.label">Sieć</span>
+        <span class="tab-teaser" data-i18n="tech.stages.2.teaser">Każda społeczność na własnym serwerze</span>
+        <span class="tab-progress" aria-hidden="true"></span>
+      </button>
+    </div>
+    <div class="stage-row">
+      <div class="stage-panels">
+        <div class="panel stage on-dark" role="tabpanel" id="tp-0" aria-labelledby="tt-0">
+          <p class="tile-tag" data-i18n="tech.stages.0.tag">Etap 1 · serwer główny</p>
+          <p class="stage-title" data-i18n="tech.stages.0.title">Jeden serwer, wszystkie społeczności</p>
+          <p class="stage-text" data-i18n="tech.stages.0.text">Wspólny rdzeń wiedzy jest jeden — bez sprzecznych wersji. Każda społeczność ma zaszyfrowaną, oddzielną warstwę ze swoimi przypadkami.</p>
+          <ul class="chips"><li data-i18n="tech.stages.0.c1">open-source LLM</li><li data-i18n="tech.stages.0.c2">RAG</li><li data-i18n="tech.stages.0.c3">Telegram</li><li data-i18n="tech.stages.0.c4">lokalne rozpoznawanie mowy</li></ul>
+        </div>
+        <div class="panel stage on-dark" role="tabpanel" id="tp-1" aria-labelledby="tt-1" hidden>
+          <p class="tile-tag" data-i18n="tech.stages.1.tag">Etap 2 · kontrola jakości</p>
+          <p class="stage-title" data-i18n="tech.stages.1.title">Każda zmiana przechodzi egzamin</p>
+          <p class="stage-text" data-i18n="tech.stages.1.text">Wiedza jest wersjonowana w Git: wiadomo, kto i co zmienił, każdą zmianę można cofnąć. Przed każdą aktualizacją system zdaje egzamin z setek prawdziwych pytań. Model można wymienić — wiedza zostaje.</p>
+          <ul class="chips"><li data-i18n="tech.stages.1.c1">historia zmian w Git</li><li data-i18n="tech.stages.1.c2">egzamin przed aktualizacją</li><li data-i18n="tech.stages.1.c3">źródło w każdej odpowiedzi</li><li data-i18n="tech.stages.1.c4">wymienny model</li></ul>
+        </div>
+        <div class="panel stage on-dark" role="tabpanel" id="tp-2" aria-labelledby="tt-2" hidden>
+          <p class="tile-tag" data-i18n="tech.stages.2.tag">Etap 3 · serwery społeczności</p>
+          <p class="stage-title" data-i18n="tech.stages.2.title">Każda społeczność na własnym sprzęcie</p>
+          <p class="stage-text" data-i18n="tech.stages.2.text">Warstwa społeczności przenosi się na jej własny serwer, z jej kluczami. Rdzeń przychodzi z serwera głównego jako kopia tylko do odczytu. Propozycje zmian rdzenia wnoszą społeczności, wprowadza serwer główny.</p>
+          <ul class="chips"><li data-i18n="tech.stages.2.c1">własne klucze</li><li data-i18n="tech.stages.2.c2">kopia rdzenia tylko do odczytu</li><li data-i18n="tech.stages.2.c3">szyfrowana kopia zapasowa</li><li data-i18n="tech.stages.2.c4">otwarta licencja</li></ul>
+        </div>
+      </div>
+      <div class="facts">
+        <div class="fact tint1"><p class="fact-value" data-i18n="tech.f1.value">0</p><p class="fact-label" data-i18n="tech.f1.label">zapytań do chmury</p></div>
+        <div class="fact tint2"><p class="fact-value sm" data-i18n="tech.f2.value">AMD Ryzen AI Max+</p><p class="fact-label" data-i18n="tech.f2.label">procesor serwera głównego</p></div>
+        <div class="fact tint4"><p class="fact-value" data-i18n="tech.f3.value">Git</p><p class="fact-label" data-i18n="tech.f3.label">historia każdej zmiany wiedzy</p></div>
+        <div class="fact tint3"><p class="fact-value" data-i18n="tech.f4.value">RODO</p><p class="fact-label" data-i18n="tech.f4.label">polska organizacja</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Mapa potrzeb ===== -->
+<section class="needs">
+  <div class="wrap">
+    <div class="needs-copy">
+      <p class="kicker" data-i18n="needs.kicker">dla zrozumienia rzeczywistości</p>
+      <h2 data-i18n="needs.title">Mapa potrzeb zamiast raportu</h2>
+      <p class="lead" data-i18n="needs.lead">Każde pytanie to pomiar. Widać, czego ludzie naprawdę potrzebują — codziennie, bez ankiet.</p>
+    </div>
+    <div class="treemap" role="img" data-i18n-attr="aria-label:needs.map" aria-label="Mapa potrzeb — dane przykładowe">
+      <div class="cell cell-a"><p class="cell-value">31%</p><p class="cell-label" data-i18n="needs.a">Legalizacja</p></div>
+      <div class="cell cell-b"><p class="cell-value">22%</p><p class="cell-label" data-i18n="needs.b">Praca i podatki</p></div>
+      <div class="cell cell-row cell-d"><p class="cell-label" data-i18n="needs.d">Ochrona praw</p><p class="cell-value">18%</p></div>
+      <div class="cell cell-e"><p class="cell-value">9%</p><p class="cell-label" data-i18n="needs.e">Inne</p></div>
+      <div class="cell cell-row cell-c"><p class="cell-label" data-i18n="needs.c">Samozatrudnienie i firmy</p><p class="cell-value">20%</p></div>
+      <p class="treemap-note" data-i18n="needs.note">udział tematów w pytaniach · dane przykładowe</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Partnerzy ===== -->
+<section class="section" id="partnerzy">
+  <div class="wrap">
+    <div class="title">
+      <p class="kicker" data-i18n="partners.kicker">partnerzy · kim jesteś? wybierz</p>
+      <h2 data-i18n="partners.title"><span class="br">[</span>Krynicę<span class="br">]</span> budujemy razem</h2>
+    </div>
+    <div class="tabs tabs-4" role="tablist" data-tabs data-i18n-attr="aria-label:partners.tablist" aria-label="Partnerzy">
+      <button type="button" class="tab" role="tab" id="rt-0" aria-controls="rp-0" aria-selected="true">
+        <span class="tab-head"><span class="mono">01 / 04</span><span class="tab-arrow" aria-hidden="true"></span></span>
+        <span class="tab-label" data-i18n="partners.list.0.label">Społeczności</span>
+        <span class="tab-teaser" data-i18n="partners.list.0.teaser">Priorytet: warstwa, która należy do Was</span>
+      </button>
+      <button type="button" class="tab" role="tab" id="rt-1" aria-controls="rp-1" aria-selected="false" tabindex="-1">
+        <span class="tab-head"><span class="mono">02 / 04</span><span class="tab-arrow" aria-hidden="true"></span></span>
+        <span class="tab-label" data-i18n="partners.list.1.label">Darczyńcy</span>
+        <span class="tab-teaser" data-i18n="partners.list.1.teaser">Projekt, który żyje po grancie</span>
+      </button>
+      <button type="button" class="tab" role="tab" id="rt-2" aria-controls="rp-2" aria-selected="false" tabindex="-1">
+        <span class="tab-head"><span class="mono">03 / 04</span><span class="tab-arrow" aria-hidden="true"></span></span>
+        <span class="tab-label" data-i18n="partners.list.2.label">Firmy technologiczne</span>
+        <span class="tab-teaser" data-i18n="partners.list.2.teaser">Edge AI na Waszym sprzęcie</span>
+      </button>
+      <button type="button" class="tab" role="tab" id="rt-3" aria-controls="rp-3" aria-selected="false" tabindex="-1">
+        <span class="tab-head"><span class="mono">04 / 04</span><span class="tab-arrow" aria-hidden="true"></span></span>
+        <span class="tab-label" data-i18n="partners.list.3.label">Aktywiści</span>
+        <span class="tab-teaser" data-i18n="partners.list.3.teaser">Prawnicy, wolontariusze, specjaliści IT</span>
+      </button>
+    </div>
+
+    <div class="panel partner" role="tabpanel" id="rp-0" aria-labelledby="rt-0">
+      <div class="partner-card tint1">
+        <p class="tile-tag" data-i18n="partners.list.0.tag">Nasz pierwszy partner</p>
+        <p class="partner-title" data-i18n="partners.list.0.title">Warstwa, która należy do Was</p>
+        <a class="btn btn-ink" href="#kontakt" data-i18n="partners.list.0.cta">Dołącz ze swoją społecznością</a>
+      </div>
+      <div class="offers">
+        <div class="offer"><p class="offer-title" data-i18n="partners.list.0.o1">Własna warstwa bazy</p><p class="offer-text" data-i18n="partners.list.0.d1">Z Waszymi przypadkami i Waszym ekspertem.</p></div>
+        <div class="offer"><p class="offer-title" data-i18n="partners.list.0.o2">Pomoc 24/7</p><p class="offer-text" data-i18n="partners.list.0.d2">Dla każdego członka, w jego języku.</p></div>
+        <div class="offer"><p class="offer-title" data-i18n="partners.list.0.o3">Z czasem własny serwer</p><p class="offer-text" data-i18n="partners.list.0.d3">Z Waszymi kluczami, na Waszym sprzęcie.</p></div>
+        <div class="offer"><p class="offer-title" data-i18n="partners.list.0.o4">Głos w rdzeniu</p><p class="offer-text" data-i18n="partners.list.0.d4">Proponujecie zmiany wspólnej wiedzy.</p></div>
+      </div>
+    </div>
+    <div class="panel partner" role="tabpanel" id="rp-1" aria-labelledby="rt-1" hidden>
+      <div class="partner-card tint3">
+        <p class="tile-tag" data-i18n="partners.list.1.tag">Organizacje darczyńców</p>
+        <p class="partner-title" data-i18n="partners.list.1.title">Projekt, który żyje po grancie</p>
+        <a class="btn btn-ink" href="#kontakt" data-i18n="partners.list.1.cta">Porozmawiajmy o wsparciu</a>
+      </div>
+      <div class="offers">
+        <div class="offer"><p class="offer-title" data-i18n="partners.list.1.o1">Czysta mapa potrzeb</p><p class="offer-text" data-i18n="partners.list.1.d1">Dane z codziennych pytań, nie z ankiet.</p></div>
+        <div class="offer"><p class="offer-title" data-i18n="partners.list.1.o2">Mierzalny efekt</p><p class="offer-text" data-i18n="partners.list.1.d2">Liczby zamiast deklaracji.</p></div>
+        <div class="offer"><p class="offer-title" data-i18n="partners.list.1.o3">Minimalne koszty</p><p class="offer-text" data-i18n="partners.list.1.d3">Własny serwer, bez abonamentów chmurowych.</p></div>
+        <div class="offer"><p class="offer-title" data-i18n="partners.list.1.o4">Otwarta licencja</p><p class="offer-text" data-i18n="partners.list.1.d4">Wiedza zostaje dla wszystkich.</p></div>
+      </div>
+    </div>
+    <div class="panel partner" role="tabpanel" id="rp-2" aria-labelledby="rt-2" hidden>
+      <div class="partner-card tint2">
+        <p class="tile-tag" data-i18n="partners.list.2.tag">Partnerzy technologiczni</p>
+        <p class="partner-title" data-i18n="partners.list.2.title">Edge AI w służbie ludzi — na Waszym sprzęcie</p>
+        <a class="btn btn-ink" href="#kontakt" data-i18n="partners.list.2.cta">Porozmawiajmy o współpracy</a>
+      </div>
+      <div class="offers">
+        <div class="offer"><p class="offer-title" data-i18n="partners.list.2.o1">Case study</p><p class="offer-text" data-i18n="partners.list.2.d1">Przebieg i wyniki pilotażu na Waszym sprzęcie.</p></div>
+        <div class="offer"><p class="offer-title" data-i18n="partners.list.2.o2">Wspólne materiały</p><p class="offer-text" data-i18n="partners.list.2.d2">Z Waszym działem marketingu.</p></div>
+        <div class="offer"><p class="offer-title" data-i18n="partners.list.2.o3">Wystąpienia</p><p class="offer-text" data-i18n="partners.list.2.d3">Na wydarzeniach branżowych i NGO.</p></div>
+        <div class="offer"><p class="offer-title" data-i18n="partners.list.2.o4">Model do powtórzenia</p><p class="offer-text" data-i18n="partners.list.2.d4">Dla kolejnych organizacji i społeczności.</p></div>
+      </div>
+    </div>
+    <div class="panel partner" role="tabpanel" id="rp-3" aria-labelledby="rt-3" hidden>
+      <div class="partner-card tint4">
+        <p class="tile-tag" data-i18n="partners.list.3.tag">Prawnicy, wolontariusze, IT</p>
+        <p class="partner-title" data-i18n="partners.list.3.title">Zmieniaj system godzinę tygodniowo</p>
+        <a class="btn btn-ink" href="#kontakt" data-i18n="partners.list.3.cta">Zostań wolontariuszem</a>
+      </div>
+      <div class="offers">
+        <div class="offer"><p class="offer-title" data-i18n="partners.list.3.o1">Prawnicy i eksperci</p><p class="offer-text" data-i18n="partners.list.3.d1">Sprawdzają odpowiedzi, uzupełniają rdzeń i warstwy.</p></div>
+        <div class="offer"><p class="offer-title" data-i18n="partners.list.3.o2">Wolontariusze</p><p class="offer-text" data-i18n="partners.list.3.d2">Wyszukują i wybierają gotowe poradniki z poprzednich lat.</p></div>
+        <div class="offer"><p class="offer-title" data-i18n="partners.list.3.o3">Specjaliści IT</p><p class="offer-text" data-i18n="partners.list.3.d3">Lokalne AI, otwarty kod, architektura.</p></div>
+        <div class="offer"><p class="offer-title" data-i18n="partners.list.3.o4">Praca zdalna</p><p class="offer-text" data-i18n="partners.list.3.d4">We własnym tempie, z dowolnego miejsca.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== Kontakt ===== -->
+<footer class="site-footer on-dark" id="kontakt">
+  <div class="wrap">
+    <p class="footer-title" data-i18n="footer.title">Napisz do nas<em class="accent">.</em></p>
+    <div class="footer-grid">
+      <div>
+        <strong><span data-i18n="footer.name">Sergiusz Panfiłow</span> · <span data-i18n="footer.role">koordynator</span></strong>
+        <span><a href="tel:+48518709756">+48 518 709 756</a> <span class="sep">·</span> <a href="https://t.me/+48518709756" rel="noopener">Telegram</a> <span class="sep">·</span> <a href="https://wa.me/48518709756" rel="noopener">WhatsApp</a> <span class="sep">·</span> <a href="https://signal.me/#p/+48518709756" rel="noopener">Signal</a></span>
+        <span><a href="mailto:sergiusz.panfilow@gmail.com">sergiusz.panfilow@gmail.com</a></span>
+      </div>
+      <div>
+        <strong data-i18n="footer.code">Otwarty kod strony</strong>
+        <span><a href="https://github.com/sergpanfilov/krynica-site" rel="noopener">github.com/sergpanfilov/krynica-site</a></span>
+      </div>
+    </div>
+    <p class="footer-note" data-i18n="footer.note">Pilotaż 2026 · <span class="br">[</span>Krynica<span class="br">]</span> · strona bez cookies, analityki i zewnętrznych usług</p>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
