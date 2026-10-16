@@ -150,7 +150,28 @@ window.KRYNICA_I18N = {
       name: 'Sergiusz Panfiłow',
       role: 'koordynator',
       code: 'Otwarty kod strony',
+      privacy: 'Polityka prywatności',
+      back: 'Wróć na stronę główną',
       note: 'Pilotaż 2026 · [Krynica] · strona bez cookies, analityki i zewnętrznych usług'
+    },
+    privacy: {
+      title: 'Polityka prywatności',
+      lead: 'Ta strona nie zbiera żadnych danych o osobach, które ją odwiedzają. Poniżej wyjaśniamy, co to znaczy w praktyce.',
+      h1: 'Czego nie ma na tej stronie',
+      t1: 'Nie ma plików cookies, narzędzi analitycznych, pikseli śledzących, formularzy, kont użytkowników ani treści ładowanych z zewnętrznych serwerów. Czcionki i cały kod strony są serwowane z tego samego miejsca co strona. Otwierając ją, Twoja przeglądarka nie łączy się z nikim poza serwerem, na którym leży strona.',
+      h2: 'Co zapisuje Twoja przeglądarka',
+      t2: 'Jedyna zapamiętywana informacja to wybrany język strony (PL lub BY). Jest ona przechowywana lokalnie w Twojej przeglądarce (localStorage), nie jest nigdzie wysyłana i możesz ją usunąć, czyszcząc dane witryny w przeglądarce.',
+      h3: 'Hosting',
+      t3: 'Strona jest publikowana w usłudze GitHub Pages. Operator tej usługi, GitHub, może zapisywać w logach serwera adresy IP odwiedzających w celu zapewnienia bezpieczeństwa i wypełnienia obowiązków prawnych. My nie mamy dostępu do tych logów i nie otrzymujemy z nich żadnych danych. Szczegóły opisuje polityka prywatności GitHub.',
+      t3link: 'Polityka prywatności GitHub',
+      h4: 'Kontakt z nami',
+      t4: 'Jeśli napiszesz do nas e-mailem lub w komunikatorze, Twoje dane (adres, numer telefonu, treść wiadomości) przetwarza operator danej usługi na własnych zasadach, a my — wyłącznie po to, by odpowiedzieć. Nie przekazujemy ich dalej i nie wykorzystujemy do innych celów.',
+      h5: 'Jak to sprawdzić',
+      t5: 'Kod źródłowy strony jest publiczny — właśnie po to, aby każdy mógł zweryfikować, że strona nie zbiera danych. Możesz też użyć narzędzi deweloperskich w przeglądarce (zakładka Sieć) i zobaczyć, że strona nie wysyła żadnych żądań do zewnętrznych usług.',
+      t5link: 'Kod strony na GitHub',
+      h6: 'Kto odpowiada za stronę',
+      t6: 'Sergiusz Panfiłow, koordynator projektu [Krynica]. W sprawach dotyczących prywatności napisz na adres poniżej.',
+      updated: 'Ostatnia aktualizacja: 16 października 2026'
     }
   },
 
@@ -302,7 +323,28 @@ window.KRYNICA_I18N = {
       name: 'Сяргей Панфілаў',
       role: 'каардынатар',
       code: 'Адкрыты код сайта',
+      privacy: 'Палітыка прыватнасці',
+      back: 'Вярнуцца на галоўную',
       note: 'Пілот 2026 · [Krynica] · сайт без cookies, аналітыкі і знешніх сэрвісаў'
+    },
+    privacy: {
+      title: 'Палітыка прыватнасці',
+      lead: 'Гэты сайт не збірае ніякіх даных пра тых, хто яго наведвае. Ніжэй тлумачым, што гэта значыць на практыцы.',
+      h1: 'Чаго няма на гэтым сайце',
+      t1: 'Няма файлаў cookies, аналітычных інструментаў, пікселяў сачэння, формаў, акаўнтаў карыстальнікаў і кантэнту, які загружаецца са знешніх сервераў. Шрыфты і ўвесь код сайта аддаюцца з таго ж месца, што і сам сайт. Калі вы яго адкрываеце, ваш браўзер не злучаецца ні з кім, акрамя сервера, на якім ляжыць сайт.',
+      h2: 'Што захоўвае ваш браўзер',
+      t2: 'Адзіная інфармацыя, якая запамінаецца, — выбраная мова сайта (PL або BY). Яна захоўваецца лакальна ў вашым браўзеры (localStorage), нікуды не адпраўляецца, і вы можаце яе выдаліць, ачысціўшы даныя сайта ў браўзеры.',
+      h3: 'Хостынг',
+      t3: 'Сайт публікуецца праз сэрвіс GitHub Pages. Аператар гэтага сэрвісу, GitHub, можа запісваць у логах сервера IP-адрасы наведвальнікаў дзеля бяспекі і выканання прававых абавязкаў. Мы не маем доступу да гэтых логаў і не атрымліваем з іх ніякіх даных. Падрабязнасці апісаны ў палітыцы прыватнасці GitHub.',
+      t3link: 'Палітыка прыватнасці GitHub',
+      h4: 'Кантакт з намі',
+      t4: 'Калі вы напішаце нам па электроннай пошце або ў месенджары, вашы даныя (адрас, нумар тэлефона, змест паведамлення) апрацоўвае аператар адпаведнага сэрвісу па сваіх правілах, а мы — выключна дзеля таго, каб адказаць. Мы не перадаём іх далей і не выкарыстоўваем для іншых мэт.',
+      h5: 'Як гэта праверыць',
+      t5: 'Зыходны код сайта публічны — менавіта для таго, каб кожны мог пераканацца, што сайт не збірае даных. Можна таксама скарыстацца інструментамі распрацоўшчыка ў браўзеры (укладка «Сетка») і ўбачыць, што сайт не адпраўляе запытаў у знешнія сэрвісы.',
+      t5link: 'Код сайта на GitHub',
+      h6: 'Хто адказвае за сайт',
+      t6: 'Сяргей Панфілаў, каардынатар праекта [Krynica]. Па пытаннях прыватнасці пішыце на адрас ніжэй.',
+      updated: 'Апошняе абнаўленне: 16 кастрычніка 2026'
     }
   }
 };

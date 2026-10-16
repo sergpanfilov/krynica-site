@@ -15,6 +15,7 @@ Adres: **https://ai.belhome.cc** (GitHub Pages, gałąź `main`, katalog główn
 
 ```
 index.html          cała treść strony (tekst polski w HTML; każdy element tekstowy ma data-i18n)
+privacy.html        polityka prywatności (teksty również w js/i18n.js, klucz `privacy`)
 css/style.css       style, @font-face, responsywność, prefers-reduced-motion
 js/i18n.js          wszystkie teksty w obu językach — jedyne miejsce do edycji treści
 js/main.js          przełącznik języka, wybór społeczności (obracający się schemat), zakładki

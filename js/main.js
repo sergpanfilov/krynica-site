@@ -43,7 +43,7 @@
     lang = next;
     var d = I18N[lang];
     document.documentElement.lang = lang;
-    document.title = get(d, 'meta.title').replace(/\*\*/g, '');
+    document.title = plain(get(d, document.body.getAttribute('data-title-key') || 'meta.title'));
     var meta = document.querySelector('meta[name="description"]');
     if (meta) meta.setAttribute('content', get(d, 'meta.description'));
 
