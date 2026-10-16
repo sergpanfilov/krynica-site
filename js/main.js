@@ -36,6 +36,10 @@
       .replace(/\[(Krynic[a-ząęćłńóśźż]*)\]/g, '<span class="br">[</span>$1<span class="br">]</span>');
   }
 
+  function plain(s) {
+    return s.replace(/\*\*/g, '');
+  }
+
   function applyLang(next) {
     lang = next;
     var d = I18N[lang];
@@ -44,10 +48,20 @@
     var meta = document.querySelector('meta[name="description"]');
     if (meta) meta.setAttribute('content', get(d, 'meta.description'));
 
+    var other = I18N[lang === 'pl' ? 'be' : 'pl'];
     var nodes = document.querySelectorAll('[data-i18n]');
     for (var i = 0; i < nodes.length; i++) {
-      var v = get(d, nodes[i].getAttribute('data-i18n'));
-      if (typeof v === 'string') nodes[i].innerHTML = rich(v);
+      var key = nodes[i].getAttribute('data-i18n');
+      var v = get(d, key);
+      if (typeof v !== 'string') continue;
+      if (nodes[i].hasAttribute('data-i18n-stable')) {
+        // reserve room for the longer of the two languages so the layout does not jump on switch
+        var o = get(other, key);
+        nodes[i].setAttribute('data-ghost', plain(typeof o === 'string' ? o : v));
+        nodes[i].innerHTML = '<span class="i18n-text">' + rich(v) + '</span>';
+      } else {
+        nodes[i].innerHTML = rich(v);
+      }
     }
     var attrNodes = document.querySelectorAll('[data-i18n-attr]');
     for (var j = 0; j < attrNodes.length; j++) {
@@ -89,7 +103,17 @@
     if (!card) return;
     var c = I18N[lang].communities[current];
     card.querySelector('.q-card-name').textContent = c.name;
-    card.querySelector('.q-card-text').textContent = c.q;
+    card.querySelector('.q-card-text .i18n-text').textContent = c.q;
+  }
+
+  // the card keeps the height of the longest question in either language
+  function initCardGhost() {
+    if (!card) return;
+    var longest = '';
+    ['pl', 'be'].forEach(function (l) {
+      I18N[l].communities.forEach(function (c) { if (c.q.length > longest.length) longest = c.q; });
+    });
+    card.querySelector('.q-card-text').setAttribute('data-ghost', longest);
   }
 
   function pick(index) {
@@ -185,6 +209,7 @@
 
   /* ---------- boot ---------- */
   initPicker();
+  initCardGhost();
   initLang();
   var groups = document.querySelectorAll('[data-tabs]');
   for (var g = 0; g < groups.length; g++) initTabs(groups[g]);
