@@ -4,7 +4,7 @@
 window.KRYNICA_I18N = {
   pl: {
     meta: {
-      title: '[Krynica] — suwerenny AI społeczności',
+      title: '[Krynica]',
       description: 'Pilotaż 2026. Wspólny rdzeń wiedzy i warstwy społeczności. AI-konsultant bez chmury, który rośnie z każdego pytania.',
       skip: 'Przejdź do treści'
     },
@@ -179,7 +179,7 @@ window.KRYNICA_I18N = {
 
   be: {
     meta: {
-      title: '[Krynica] — суверэнны AI супольнасцей',
+      title: '[Krynica]',
       description: 'Пілот 2026. Агульнае ядро ведаў і слаі супольнасцей. AI-кансультант без воблака, які расце з кожнага пытання.',
       skip: 'Перайсці да зместу'
     },
