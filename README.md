@@ -4,6 +4,14 @@ Strona jednoekranowa projektu **[Krynica]**: suwerennego AI społeczności biał
 
 Adres: **https://ai.belhome.cc** (GitHub Pages, gałąź `main`, katalog główny).
 
+## Paszport
+
+- **Co to jest:** statyczna strona pilotażu [Krynica] pod adresem https://ai.belhome.cc.
+- **Po co:** wizytówka projektu dla partnerów, darczyńców i społeczności.
+- **Jak działa:** GitHub Pages z gałęzi `main`. Na serwerze nie działa żadna usługa, nie ma portów ani sekretów; serwer trzyma tylko kopię roboczą.
+- **Kopia robocza:** `~/Projects/krynica-site` (do 09.11.2026 — `~/krynica-site`). Hub projektu — osobne repozytorium `krynica`.
+- **Historia zmian:** `CHANGELOG.md`.
+
 ## Zasady
 
 - Czysty statyczny HTML + CSS + wanilowy JS. Bez frameworków, bez kroku budowania, bez zależności.
